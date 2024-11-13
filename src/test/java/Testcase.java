@@ -6,4 +6,8 @@ public class Testcase
     void test(){
         System.out.println("Hello world");
     }
+    @Test
+    void tests(){
+        System.out.println("Hello");
+    }
 }
