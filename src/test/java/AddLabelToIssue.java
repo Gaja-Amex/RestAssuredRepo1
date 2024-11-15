@@ -9,11 +9,10 @@ public class AddLabelToIssue {
         String url = "https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}/labels";
 
 
-        String token = "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";
 
         String owner = "Gaja-Amex";
-        String repoName = "FirstAssignment";
-        int issueNumber = 1;  // Issue number to add the label to
+        String repoName = "RestAssured1";
+        int issueNumber = 1;
 
         JSONArray labels = new JSONArray();
         labels.put("bug");
@@ -27,6 +26,7 @@ public class AddLabelToIssue {
                 .pathParam("issue_number", issueNumber)
                 .body(labels.toString())
                 .post(url);
+
 
         System.out.println("Response Code: " + response.getStatusCode());
         System.out.println("Labels Added: " + response.getBody().asString());

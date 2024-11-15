@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class BranchSearch {
 
     private static final String GITHUB_API_URL = "https://api.github.com";
-    private static final String GITHUB_TOKEN = "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"; // Replace with your token
+
 
     @Test
     public void testSearchBranchInRepository() {
