@@ -8,7 +8,7 @@ public class AddLabelToIssue {
 
         String url = "https://api.github.com/repos/{owner}/{repo}/issues/{issue_number}/labels";
 
-
+        String token = "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";
 
         String owner = "Gaja-Amex";
         String repoName = "RestAssured1";
